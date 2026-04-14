@@ -175,24 +175,24 @@ public:
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnStringReceived, int32, Channel, FString, Value);
 	DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnBytesReceived, int32, Channel, TArray<uint8>, Value);
 
-	/** Event fired when float value is received from hardware */
-	UPROPERTY(BlueprintAssignable, Category = "HoloCade|UDP|Events")
+	/** Event fired when float value is received from hardware (subscribe in code/Blueprints; hidden from Details to avoid stale persistent bindings). */
+	UPROPERTY(BlueprintAssignable, Category = "HoloCade|UDP|Events", meta = (HideInDetailPanel))
 	FOnFloatReceived OnFloatReceived;
 
 	/** Event fired when boolean value is received from hardware */
-	UPROPERTY(BlueprintAssignable, Category = "HoloCade|UDP|Events")
+	UPROPERTY(BlueprintAssignable, Category = "HoloCade|UDP|Events", meta = (HideInDetailPanel))
 	FOnBoolReceived OnBoolReceived;
 
 	/** Event fired when integer value is received from hardware */
-	UPROPERTY(BlueprintAssignable, Category = "HoloCade|UDP|Events")
+	UPROPERTY(BlueprintAssignable, Category = "HoloCade|UDP|Events", meta = (HideInDetailPanel))
 	FOnInt32Received OnInt32Received;
 
 	/** Event fired when string value is received from hardware */
-	UPROPERTY(BlueprintAssignable, Category = "HoloCade|UDP|Events")
+	UPROPERTY(BlueprintAssignable, Category = "HoloCade|UDP|Events", meta = (HideInDetailPanel))
 	FOnStringReceived OnStringReceived;
 
 	/** Event fired when raw bytes are received from hardware */
-	UPROPERTY(BlueprintAssignable, Category = "HoloCade|UDP|Events")
+	UPROPERTY(BlueprintAssignable, Category = "HoloCade|UDP|Events", meta = (HideInDetailPanel))
 	FOnBytesReceived OnBytesReceived;
 
 protected:

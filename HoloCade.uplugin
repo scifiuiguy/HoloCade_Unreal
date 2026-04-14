@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
-	"Version": 1,
-	"VersionName": "1.0.0",
+	"Version": 2,
+	"VersionName": "1.0.1",
 	"FriendlyName": "HoloCade",
 	"Description": "A comprehensive SDK for developing VR/AR Location-Based Entertainment experiences with support for AI facial animation, large hydraulic haptics, and embedded systems integration.",
 	"Category": "Virtual Reality",
